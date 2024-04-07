@@ -42,40 +42,6 @@
       "move_one_level_inside_file_to_outside": false
     },
     {
-      "name": "driver-rubix-compute-io",
-      "repo": "driver-rubix-compute-io",
-      "description": "rubix compute io driver",
-      "port": 5001,
-      "transport": "http",
-      "exec_start": "app -p 5001 -r <root_dir> -a <data_dir_name> -d data -c config --prod server",
-      "attach_working_dir_on_exec_start": true,
-      "environment_vars": [],
-      "products": [
-        "rubix-compute",
-        "rubix-compute-vpn",
-        "rubix-compute-lorawan",
-        "rubix-compute-lorawan-vpn",
-        "rubix-compute-io"
-      ],
-      "arch": [
-        "armv7"
-      ],
-      "min_version": "v0.1.0",
-      "max_version": "",
-      "flow_dependency": true,
-      "plugin_dependency": [
-        "rubixio"
-      ],
-      "service_dependency": [
-        "pigpi"
-      ],
-      "match_name": false,
-      "is_zipball": false,
-      "do_not_validate_arch": false,
-      "move_extracted_file_to_name_app": true,
-      "move_one_level_inside_file_to_outside": false
-    },
-    {
       "name": "driver-lora",
       "repo": "driver-lora",
       "description": "lora driver",
@@ -101,35 +67,6 @@
       ],
       "service_dependency": [
         "socat"
-      ],
-      "match_name": false,
-      "is_zipball": false,
-      "do_not_validate_arch": false,
-      "move_extracted_file_to_name_app": true,
-      "move_one_level_inside_file_to_outside": false
-    },
-    {
-      "name": "driver-edge-28",
-      "repo": "driver-edge-28",
-      "description": "edge-28 driver",
-      "port": 5000,
-      "transport": "http",
-      "exec_start": "app -p 5000 -g <data_dir> -d data -c config -i <identifier> -s config.json -l logging.conf --prod",
-      "attach_working_dir_on_exec_start": true,
-      "environment_vars": [],
-      "products": [
-        "edge-28"
-      ],
-      "arch": [
-        "armv7"
-      ],
-      "min_version": "v0.0.2",
-      "max_version": "",
-      "flow_dependency": true,
-      "plugin_dependency": [
-        "edge28"
-      ],
-      "service_dependency": [
       ],
       "match_name": false,
       "is_zipball": false,
